@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyanth Pasunuri - Portfolio</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-DleZCbAI.css">
+</head>
+<body>
+    <!-- Starfield Background -->
+    <canvas id="starfield" class="starfield-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Home</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="https://drive.google.com/file/d/1-eMuy1qZ8CraFiDlFaK95vFq7hOlql5y/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-resume">Resume</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <a href="https://drive.google.com/file/d/1-eMuy1qZ8CraFiDlFaK95vFq7hOlql5y/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-resume mobile">Resume</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content animate-fade-in">
+                <div class="hero-greeting">Hello, I'm</div>
+                <h1 class="hero-title">Shreyanth Pasunuri</h1>
+                <h2 class="hero-subtitle">Full Stack Developer | AI/ML Enthusiast</h2>
+                <p class="hero-description">
+                    Detail-oriented Computer Science graduate with expertise in full-stack development and machine learning. 
+                    Passionate about leveraging AI/ML to solve real-world problems and create impactful solutions.
+                </p>
+                
+                <div class="hero-info">
+                    <div class="info-item">
+                        <svg class="info-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>Hyderabad, India</span>
+                    </div>
+                    <div class="info-item">
+                        <svg class="info-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <span>+91-9392162512</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        View My Work
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+                
+                <div class="hero-socials">
+                    <a href="https://github.com/shreyanthpasunuri" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/shreyanth-pasunuri" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:shreyanthpasunuri999@gmail.com" class="social-link">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image animate-fade-in">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1555066931-78c471f0d4ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9ncmFtbWVyJTIwY29kaW5nJTIwbGFwdG9wfGVufDF8fHx8MTc2NzI3Mjg1NHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Coding workspace">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="decorative-circle-1"></div>
+                <div class="decorative-circle-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    Detail-oriented and highly motivated Computer Science and Engineering graduate with a solid foundation in full-stack development, 
+                    machine learning, and cybersecurity. Demonstrated ability to apply data structures, algorithms, and modern programming languages 
+                    to solve real-world problems through impactful academic projects.
+                </p>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <p>Strong foundation in modern programming languages and web technologies.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3>AI/ML & Data Science</h3>
+                    <p>Expertise in machine learning, computer vision, and NLP applications.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">CNN</span>
+                    </div>
+                </div>
+
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                        </svg>
+                    </div>
+                    <h3>Tools & Frameworks</h3>
+                    <p>Proficient in databases, version control, and development environments.</p>
+                    <div class="skill-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">DBMS</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="subsection animate-on-scroll">
+                <div class="subsection-header">
+                    <svg class="subsection-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+                    </svg>
+                    <h3>Education</h3>
+                </div>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <h4>B.E. in Computer Science and Engineering</h4>
+                        <p class="institution">MVSR Engineering College</p>
+                        <p class="location">Hyderabad, India</p>
+                        <p class="period">Dec 2020 – Jun 2024</p>
+                        <p class="grade">CGPA: 7.7/10</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Intermediate, MPC</h4>
+                        <p class="institution">Sri Chaitanya Junior College</p>
+                        <p class="location">Hyderabad, India</p>
+                        <p class="period">Jun 2018 – Apr 2020</p>
+                        <p class="grade">96.4%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="subsection animate-on-scroll">
+                <div class="subsection-header">
+                    <svg class="subsection-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                    </svg>
+                    <h3>Certifications</h3>
+                </div>
+                <div class="certifications-container">
+                    <div class="certifications-grid">
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <p>Machine Learning - Coursera (2023)</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <p>Supervised ML: Regression & Classification - Stanford University (2023)</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <p>Advanced Learning Algorithms - Stanford University (2023)</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <p>Machine Learning Fundamentals - AWS Academy (2022)</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <p>Database Management Systems - IIT Bombay (2022)</p>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <p>Java Programming - IIT Bombay (2022)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Academic Projects</h2>
+                <p class="section-description">
+                    Impactful projects demonstrating expertise in AI/ML, computer vision, and deep learning. 
+                    Each project showcases problem-solving skills and technical proficiency.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaSUyMG1hY2hpbmUlMjBsZWFybmluZ3xlbnwxfHx8fDE3NjY4MzI1Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Multimodal Content Moderation System">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Multimodal Content Moderation System</h3>
+                        <p>Built a real-time moderation tool using Python, NLP, and CNN models to detect unsafe content in both text and images. Achieved 85–90% detection accuracy, improving platform safety for over 1M+ daily users.</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <div class="detail-bullet"></div>
+                                <p>Integrated sentiment analysis, NER, and image classification</p>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-bullet"></div>
+                                <p>Detected NSFW, nudity, and violence content</p>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-bullet"></div>
+                                <p>85-90% detection accuracy</p>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwaW1hZ2luZ3xlbnwxfHx8fDE3NjY4MzI1Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Pixel Semantic Segmentation for Cancer Detection">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pixel Semantic Segmentation for Cancer Detection</h3>
+                        <p>Developed a semantic segmentation model to classify pixels in histopathological images and detect cancerous regions. Achieved 85% accuracy using convolutional neural networks (CNNs).</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <div class="detail-bullet"></div>
+                                <p>Labeled images using supervised learning</p>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-bullet"></div>
+                                <p>Evaluated on tissue-level datasets</p>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-bullet"></div>
+                                <p>85% accuracy during testing</p>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Medical AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Internships -->
+            <div class="internships-section animate-on-scroll">
+                <h3 class="subsection-title">Internships</h3>
+                <div class="internships-grid">
+                    <div class="internship-card">
+                        <h4>AI/ML Virtual Internship</h4>
+                        <p class="organization">AICTE</p>
+                        <p class="description">Gained hands-on experience in artificial intelligence and machine learning concepts, working on practical AI/ML projects and applications.</p>
+                    </div>
+                    <div class="internship-card">
+                        <h4>Cybersecurity Virtual Internship</h4>
+                        <p class="organization">AICTE</p>
+                        <p class="description">Developed skills in cybersecurity principles, threat analysis, and security best practices through virtual training programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Looking for an entry-level software engineering or AI/ML role? I'm eager to contribute 
+                    my technical expertise and drive business value. Let's connect!
+                </p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <a href="mailto:shreyanthpasunuri999@gmail.com">shreyanthpasunuri999@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">Phone</div>
+                            <a href="tel:+919392162512">+91-9392162512</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">Location</div>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">GitHub</div>
+                            <a href="https://github.com/shreyanthpasunuri" target="_blank" rel="noopener noreferrer">github.com/shreyanthpasunuri</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">LinkedIn</div>
+                            <a href="https://linkedin.com/in/shreyanth-pasunuri" target="_blank" rel="noopener noreferrer">linkedin.com/in/shreyanth-pasunuri</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your opportunity..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Send Message
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">SP.</div>
+                    <p>Computer Science Engineer passionate about AI/ML and building impactful solutions.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-socials">
+                        <a href="https://github.com/shreyanthpasunuri" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/shreyanth-pasunuri" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:shreyanthpasunuri999@gmail.com" class="footer-social-link">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Shreyanth Pasunuri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
